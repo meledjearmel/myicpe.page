@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+/* Active les utilitaires `dark:*` quand `<html class="dark">` (sync avec le toggle JS). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+  Thèmes DaisyUI disponibles pour cette app.
+  Les noms utilisés par le toggle (variables VITE_THEME_LIGHT / VITE_THEME_DARK dans .env)
+  doivent être listés ici. Si vous changez de paire (ex. corporate + business), ajoutez les
+  thèmes correspondants et mettez à jour @plugin "daisyui/theme" ci-dessous si besoin.
+*/
+@plugin "daisyui" {
+  themes: garden --default, night --prefersdark;
+}
+
+@plugin "daisyui/theme" {
+  name: "garden";
+  default: true;
+  --color-primary: oklch(52% 0.19 260);
+  --color-primary-content: oklch(99% 0.01 260);
+}
+
+@plugin "daisyui/theme" {
+  name: "night";
+  default: false;
+  --color-primary: oklch(52% 0.19 260);
+  --color-primary-content: oklch(9% 0.01 260);
+}
+
+/* View Transitions : effet cercle au changement de thème (clip-path animé sur ::view-transition-new). */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
