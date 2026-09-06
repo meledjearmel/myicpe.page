@@ -2,7 +2,9 @@ import { ref, shallowRef, computed } from 'vue'
 import { formatBytesPerSecond, guessFilename } from '@/utils/downloadFormat.js'
 
 /**
- * Télécharge une ressource en flux avec suivi de progression (nécessite CORS côté serveur si domaine différent).
+ * Télécharge une ressource en flux avec suivi de progression.
+ * Origine différente : le serveur du fichier doit envoyer Access-Control-Allow-Origin (ex. l’URL du site ou *)
+ * et Access-Control-Expose-Headers: Content-Length pour afficher le pourcentage (sinon barre indéterminée).
  */
 export function useTrackedDownload() {
   const status = ref('idle') // idle | loading | done | error | cors

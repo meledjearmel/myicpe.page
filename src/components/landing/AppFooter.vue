@@ -19,8 +19,21 @@ import { RouterLink } from 'vue-router'
         <RouterLink to="/cgu" class="link link-hover">CGU</RouterLink>
       </nav>
     </div>
-    <div class="border-t border-base-300/80 py-4 text-center text-xs text-base-content/60">
-      © {{ new Date().getFullYear() }} MyICPE — CIAPOL. Tous droits réservés.
+    <div class="border-t border-base-300/80 px-4 py-4 text-xs text-base-content/60 sm:px-6">
+      <div class="mx-auto flex max-w-6xl flex-col items-center justify-center gap-3 sm:flex-row sm:justify-between">
+        <p>© {{ new Date().getFullYear() }} MyICPE — CIAPOL. Tous droits réservés.</p>
+        <a
+          href="https://neocode.ci/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 motion-safe:transition motion-safe:hover:opacity-80"
+        >
+          <span>Conçu et développé par</span>
+          <span class="inline-flex items-center rounded-md px-2 py-1 shadow-sm">
+            <img src="@/assets/images/neocode-logo.png" alt="Neocode" class="h-4 w-auto" width="88" height="24" />
+          </span>
+        </a>
+      </div>
     </div>
   </footer>
 </template>

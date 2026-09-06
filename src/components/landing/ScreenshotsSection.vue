@@ -96,7 +96,7 @@ onUnmounted(() => {
       <p class="text-primary mb-2 text-center text-sm font-semibold uppercase tracking-wider">Aperçu</p>
       <h2 class="mb-4 text-center text-3xl font-bold tracking-tight sm:text-4xl">L’application en images</h2>
       <p class="text-base-content/80 mx-auto mb-12 max-w-2xl text-center text-base">
-        Quelques écrans de MyICPE dans un cadre mobile, pour se projeter dans l’usage terrain et bureau.
+        Tableau de bord, entreprises, inspections, pollutions et redevances — en thème clair ou sombre, au choix.
       </p>
 
       <template v-if="captureScreenshots.length">
@@ -115,7 +115,7 @@ onUnmounted(() => {
               :key="shot.name"
               class="carousel-item w-full shrink-0 justify-center px-2 py-3 lg:w-[calc((100%-3rem)/3)] lg:max-w-none"
             >
-              <PhoneScreenshot :src="shot.src" :alt="`Capture MyICPE — ${shot.name}`" />
+              <PhoneScreenshot :src="shot.src" :alt="shot.alt" />
             </div>
           </div>
 

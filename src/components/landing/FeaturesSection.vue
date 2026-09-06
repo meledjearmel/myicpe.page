@@ -1,40 +1,40 @@
 <script setup>
 const features = [
   {
-    title: 'Consultation hors ligne',
+    title: 'Licence & connexion',
     text:
-      'Les données déjà synchronisées restent consultables sans connexion — utile en zone blanche ou lorsque le réseau est instable.',
+      'Détection automatique de la licence associée à l’appareil, sans ressaisie de clé. En son absence, l’application reste consultable le temps de l’activation, avec 48 h de grâce avant tout blocage.',
     highlight: true,
   },
   {
-    title: 'Tableau de bord',
-    text: 'Indicateurs clés, graphiques et filtres (direction, année) pour suivre l’activité et les tendances.',
+    title: 'Verrouillage de l’application',
+    text:
+      'Code PIN avec déverrouillage rapide par empreinte digitale ou Face ID, et délai de verrouillage automatique configurable dans les Paramètres.',
+  },
+  {
+    title: 'Notifications & rappels',
+    text:
+      'Rappels de synchronisation à heures fixes (2h, 10h, 14h, 18h), alertes avant chaque inspection programmée, statut de licence et de synchronisation toujours visible sur le tableau de bord.',
+  },
+  {
+    title: 'Redevances',
+    text:
+      'Calcul sourcé directement depuis la table officielle des classes ICPE, vérification d’une taxe par scan de QR code, historique et détail consultables hors ligne.',
   },
   {
     title: 'Entreprises et carte',
-    text: 'Liste et carte des installations : repérage géographique, filtres par type et zone, détail au clic.',
-  },
-  {
-    title: 'Inspections',
-    text: 'Organisation et suivi des contrôles (liste, planification selon les écrans de l’application).',
-  },
-  {
-    title: 'Taxes / redevances',
     text:
-      'Aide à la détermination des montants, historique et vérification par scan QR code ou saisie d’URL (vue web intégrée lorsque la connexion est disponible).',
+      'Fiches entreprise repensées (secteur, zone, direction, classe en un coup d’œil), carte interactive au choix via Google Maps ou Mapbox, création simplifiée avec les valeurs officielles proposées.',
   },
   {
     title: 'Synchronisation',
-    text: 'Mise à jour des jeux de données pour travailler sur une base alignée avec le référentiel central.',
+    text:
+      'Fonctionne d’abord en local puis se met à jour dès que le réseau revient ; zones, régions, secteurs et classes alimentés depuis le serveur, avec suivi de progression en temps réel.',
   },
   {
-    title: 'Sécurité d’accès',
-    text: 'Connexion avec identifiants CIAPOL et code PIN pour verrouiller l’accès au quotidien.',
-  },
-  {
-    title: 'Pollution',
-    text: 'Module dédié, généralement réservé aux profils habilités (ex. administrateurs).',
-    muted: true,
+    title: 'Interface',
+    text:
+      'Navigation par onglets — Accueil, Entreprises, Inspections, Pollutions, Redevances, Paramètres — tableau de bord en plein écran, thème clair/sombre adaptatif et photo de profil personnalisable.',
   },
 ]
 </script>
@@ -43,10 +43,10 @@ const features = [
   <section id="fonctionnalites" class="landing-section scroll-mt-24 py-16 sm:py-20">
     <div class="mx-auto max-w-6xl px-4 sm:px-6">
       <p class="text-primary mb-2 text-center text-sm font-semibold uppercase tracking-wider">Fonctionnalités</p>
-      <h2 class="mb-4 text-center text-3xl font-bold tracking-tight sm:text-4xl">Une vue unifiée du périmètre ICPE</h2>
+      <h2 class="mb-4 text-center text-3xl font-bold tracking-tight sm:text-4xl">Ce qu’apporte la version 1.0.0</h2>
       <p class="text-base-content/80 mx-auto mb-12 max-w-2xl text-center">
-        Des réponses concrètes aux irritants du terrain : données centralisées, carte lisible, redevances et mode hors
-        ligne pour rester efficace partout.
+        Un accès par licence fiable, l’application verrouillable comme un dossier confidentiel, des rappels qui ne
+        laissent plus rien passer, et une interface repensée à l’usage sur le terrain.
       </p>
 
       <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

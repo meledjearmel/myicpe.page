@@ -2,21 +2,36 @@
 const faqs = [
   {
     q: 'L’application est-elle réservée aux agents du CIAPOL ?',
-    a: 'Le positionnement institutionnel vise les équipes du CIAPOL et partenaires du contrôle ICPE. Le périmètre exact des comptes (agents uniquement, partenaires, etc.) doit être aligné avec votre politique d’accès.',
+    a: 'MyICPE s’adresse aux équipes du CIAPOL et partenaires en charge du contrôle et de l’accompagnement des installations classées, sur la base d’une licence associée à votre structure.',
+  },
+  {
+    q: 'Que se passe-t-il si aucune licence n’est trouvée ?',
+    a:
+      'L’application reste consultable pendant l’activation. Si aucune licence n’est détectée, une alerte s’affiche avec une fenêtre de grâce de 48 h avant tout blocage — largement de quoi régulariser sans interrompre le travail sur le terrain.',
   },
   {
     q: 'Que peut-on consulter hors ligne ?',
     a:
-      'Les données déjà synchronisées sur l’appareil restent consultables sans réseau. Le détail par écran (entreprises, inspections, tableau de bord, etc.) dépend des jeux de données effectivement mis en cache — à valider côté produit pour la communication publique.',
+      'Les fiches déjà synchronisées (entreprises, inspections, redevances) restent disponibles sans réseau. Zones, régions, secteurs et classes sont mis à jour dès que la connexion revient, avec un écran de synchronisation qui affiche la progression en temps réel.',
   },
   {
     q: 'Comment fonctionne la vérification des redevances ?',
     a:
-      'Un parcours permet de vérifier l’information via scan QR code ou saisie d’URL, avec affichage dans une vue intégrée lorsque la connexion est disponible.',
+      'Un scan de QR code, en flux plein écran, permet de vérifier une taxe et de retrouver son historique. Le calcul du montant suit directement le barème officiel par classe ICPE, sans valeur codée en dur.',
+  },
+  {
+    q: 'Comment sont protégées les données si le téléphone est perdu ou change de mains ?',
+    a:
+      'L’application se verrouille par code PIN, avec déverrouillage rapide par empreinte digitale ou Face ID, et un délai de verrouillage automatique configurable dans les Paramètres.',
+  },
+  {
+    q: 'Comment recevoir les prochaines mises à jour ?',
+    a:
+      'MyICPE se met à jour automatiquement via AppStation : aucune action n’est nécessaire pour recevoir les prochaines versions.',
   },
   {
     q: 'Où trouver les mentions légales et la confidentialité ?',
-    a: 'Des pages dédiées sont prévues sur ce site ; les textes définitifs seront validés par votre service juridique et communication.',
+    a: 'Des pages dédiées sont disponibles sur ce site : mentions légales, confidentialité et conditions générales d’utilisation.',
   },
 ]
 </script>

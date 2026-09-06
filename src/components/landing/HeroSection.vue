@@ -12,17 +12,19 @@ import { RouterLink } from 'vue-router'
     />
     <div class="mx-auto flex max-w-6xl flex-col items-center gap-10 px-4 text-center sm:px-6 lg:flex-row lg:items-center lg:text-left">
       <div class="motion-safe:animate-[fadeInUp_0.7s_ease-out_both] max-w-xl flex-1">
-        <p class="text-primary mb-3 text-sm font-semibold uppercase tracking-wider">CIAPOL · ICPE</p>
+        <p class="text-primary mb-3 text-sm font-semibold uppercase tracking-wider">
+          CIAPOL · Côte d’Ivoire · v1.0.0
+        </p>
         <h1 class="mb-4 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
-          Pilotez le suivi des ICPE : entreprises, inspections, taxes et indicateurs, au même endroit.
+          Le suivi des installations classées, centralisé et fiable sur le terrain.
         </h1>
         <p class="text-base-content/85 mb-6 text-lg leading-relaxed">
-          L’outil mobile du Centre Ivoirien Anti-Pollution pour cartographier, inspecter et suivre la conformité
-          environnementale des installations classées.
+          L’outil mobile du Centre Ivoirien Anti-Pollution pour ficher les entreprises, planifier les inspections,
+          calculer et vérifier les redevances, et cartographier les sites classés.
         </p>
         <p class="text-base-content/75 mb-8 text-base leading-relaxed">
-          Tableau de bord, cartographie, planning d’inspections, redevances et synchronisation des données — conçu pour
-          les équipes qui contrôlent et accompagnent les installations classées.
+          Accès par licence détecté automatiquement, application verrouillable par code PIN ou biométrie, et données
+          consultables hors ligne — conçu pour les équipes qui contrôlent et accompagnent les installations classées.
         </p>
         <div class="flex flex-wrap items-center justify-center gap-3 lg:justify-start">
           <RouterLink

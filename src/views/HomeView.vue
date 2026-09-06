@@ -7,6 +7,7 @@ import FeaturesSection from '@/components/landing/FeaturesSection.vue'
 import TrustSection from '@/components/landing/TrustSection.vue'
 import RoadmapSection from '@/components/landing/RoadmapSection.vue'
 import DownloadSection from '@/components/landing/DownloadSection.vue'
+import ReleaseNotesSection from '@/components/landing/ReleaseNotesSection.vue'
 import FAQSection from '@/components/landing/FAQSection.vue'
 import AppFooter from '@/components/landing/AppFooter.vue'
 </script>
@@ -22,6 +23,7 @@ import AppFooter from '@/components/landing/AppFooter.vue'
       <TrustSection />
       <RoadmapSection />
       <DownloadSection />
+      <ReleaseNotesSection />
       <FAQSection />
     </main>
     <AppFooter />
